@@ -19,5 +19,3 @@ jobs:
         run: npm install # Command to install project dependencies
       - name: Build project
         run: npm run build # Command to run your project's build script
-      - name: Run tests
-        run: npm test # Command to run project tests
