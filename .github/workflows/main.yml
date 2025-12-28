@@ -1,4 +1,4 @@
-name: Node.js CI # The name of your workflow
+name: Node.js CI/CD # The name of your workflow
 
 on:
   push:
@@ -19,3 +19,10 @@ jobs:
         run: npm install # Command to install project dependencies
       - name: Build project
         run: npm run build # Command to run your project's build script
+      - name: show dir
+        run: echo $GITHUB_WORKSPACE/dist
+      - name: Show build files
+        run: |
+          pwd
+          ls -la
+          ls -la dist
